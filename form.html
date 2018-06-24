@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    
+    <form method="POST" action="https://formspree.io/martast75@gmail.com">
+        <label for="first-name">First Name:</label>
+        <label for="last-name">Last Name:</label> 
+        <br>
+        <input type="text" name="first-name"
+         id="first-name" placeholder="First Name" required> 
+        <input type="text" name="last-name"
+         id="last-name" placeholder="Last Name" required> 
+        <br>
+        <br>
+        <label>Age:
+            <input type="age" name="age"
+             placeholder="Age" required> 
+        </label>
+        <br>
+        <br>
+        <label>City:
+            <input type="city" name="city"
+             placeholder="City" required> 
+        </label>
+        <br>
+        <br>
+        <label>Email:
+            <input type="email" name="user-email"
+             placeholder="Email" required> 
+        </label>
+        <br>
+        <br>
+        <label>Password:
+            <input type="password" name="password" placeholder="********"
+              required pattern=".{8,}"
+              title="Minimum 8 symbols">
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="SEND"><input type="reset">
+    </form>
+    
+    
+</body>
+</html>
