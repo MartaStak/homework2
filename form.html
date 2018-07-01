@@ -1,99 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form</title>
+    <title>KOLORYT</title>
 </head>
+
 <body>
-    <h1>Application Form</h1>
-    <form method="POST" action="https://formspree.io/martast75@gmail.com">
-        <fieldset>
-            <legend>Name:</legend>
-                <label for="first-name" style="margin-right: 95px">First Name:</label>
-                <label for="last-name">Last Name:</label> 
-                <br>
-                <input type="text" name="first-name"
-                 id="first-name" placeholder="First Name" required> 
-                <input type="text" name="last-name"
-                 id="last-name" placeholder="Last Name" required> 
-        </fieldset>
-        <label for="first-name" margin-right=20px>First Name:</label>
-        <label for="last-name">Last Name:</label> 
-        <hr>
+    <header>
+        <h1 align="center">KOLORYT</h1>
         <br>
-        <br>
-        <fieldset>
-            <legend>Age:</legend>
-            <ul>
-                <li style="list-style-type:none"><label for="less-than-15"><input id="less-than-15" type="radio" name="less than 15" checked>Less than 15</label></li>
-                <li style="list-style-type:none"><label for="16-20"><input id="16-20" type="radio" name="16-20">16-20</label></li>
-                <li style="list-style-type:none"><label for="21-25"><input id="21-25" type="radio" name="21-25">21-25</label></li>
-                <li style="list-style-type:none"><label for="26-30"><input id="26-30" type="radio" name="26-30">26-30</label></li>
-                <li style="list-style-type:none"><label for="31-35"><input id="31-35" type="radio" name="31-35">31-35</label></li>
-                <li style="list-style-type:none"><label for="36-40"><input id="36-40" type="radio" name="36-40">36-40</label></li>
-                <li style="list-style-type:none"><label for="more-than-41"><input id="more-than-41" type="radio" name="more than 41">More than 41</label></li>
-            </ul>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Age:</legend>
-            <label for="less-than-15"><input id="less-than-15" type="radio" name="less than 15">Less than 15</label>
-            <label for="16-20"><input id="16-20" type="radio" name="16-20"16-20</label>
-            <label for="21-25"><input id="21-25" type="radio" name="21-25"21-25</label>
-            <label for="26-30"><input id="26-30" type="radio" name="26-30"26-30</label>
-            <label for="31-35"><input id="31-35" type="radio" name="31-35"31-35</label>
-            <label for="36-40"><input id="36-40" type="radio" name="36-40"36-40</label>
-            <label for="more-than-41"><input id="more-than-41" type="radio" name="more than 41">More than 41</label>
-       </fieldset>
-        <hr>
-        <br>
-        <fieldset>
-            <legend>Gender:</legend>
-            <ul>
-                <li style="list-style-type:none"><label for="male"><input id="male" type="checkbox" name="male" checked>Male</label></li>
-                <li style="list-style-type:none"><label for="female"><input id="female" type="checkbox" name="female">Female</label></li>
-                <li style="list-style-type:none"><label for="other"><input id="other" type="checkbox" name="other">Other</label></li>
-            </ul>
-        </fieldset>
-        <br>
-        <label>City:
-            <input type="text" name="city"
-             placeholder="City" required> 
-        </label>
-        <hr>
-        <br>
-        <fieldset>
-            <legend>City:</legend>
-            <label for="city">
-                <input type="text" name="city"
-                 placeholder="City" required> 
-            </label>
-        </fieldset>
-        <br>
-        <br>
-        <fieldset>
-            <legend>Sign in:</legend>
-            <label>Email:
-                <input type="email" name="user-email"
-                 placeholder="Email" required> 
-            </label>
-            <br>
-            <br>
-            <label>Password:
-                <input type="password" name="password" placeholder="********"
-                  required pattern=".{8,}"
-                  title="Minimum 8 symbols">
-            </label>
-        </fieldset>
-        <br>
-        <br>
-        <input type="submit" value="SEND"><input type="reset">
-    </form>
-    
-    
+        <img src="images/koloryt.jpg" alt="KOLORYT">
+    </header>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#dances">Dances</a>
+        <a href="#table">Places in contests</a>
+        <a href="#sign-in">Sign in</a>
+    </nav> 
+    <hr>    
+    <section id="home">
+        <h2>HOME</h2>
+        <figure>
+            <img src="images/folk-dance.jpg" alt="Folk Dance">
+            <figcaption>All the colors of the rainbow of Ukrainian Folk Dance - this is <b>"KOLORYT"</b></figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/tenderness.jpg" alt="tenderness">
+            <figcaption>Youthful eagerness and maidenlike tenderness - this is <u><i>"KOLORYT"</i></u></figcaption>
+        </figure>
+        <figure>
+            <img src="images/style.jpg" alt="style">
+            <figcaption>Original execution of style - this is <b>"KOLORYT"</i></figcaption>
+        </figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AZiL0Bz4OOI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p>The joy of communion with true art - this is <b>"KOLORYT"</b></p>
+    </section>
+    <hr>    
+    <section id="dances">
+        <h2>Dances</h2>
+        <img src="images/hutsulshchyna.jpg" alt="Hutsulshchyna">
+        <ul>
+            <li>Hutsulshchyna</li>
+            <ol type="a">
+                <li>Pivtorak</li>
+                <li>Arkan</li>
+            </ol>
+            <li>Pokuttya</li>
+            <ol type="a" start="3">
+                <li>Serbyn</li>
+                <li>Holubka</li>
+            </ol>
+            <li>Prykarpattya</li>
+            <ol type="a" start="5">
+                <li>Chepurnenka</li>
+                <li>Horyanka</li>
+                <li>Obertynka</li>
+            </ol>
+        </ul>
+    </section>
+    <hr>    
+    <section id="table">
+        <h2>Places in contests</h2>
+        <figure>
+            <img src="images/chepurnenka.jpg" alt="Chepurnenka">
+            <img src="images/horyanka.jpg" alt="Horyanka">
+            <figcaption>CONTESTS</figcaption>
+        </figure>
+        <table border="2">
+            <tr>
+                <th></th>
+                <th>2018</th>
+                <th>2017</th>
+                <th>2016</th>
+            </tr>
+            <tr>
+                <th>Nagirne</th>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>Kosmach</th>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </section>
+    <hr>    
+    <section id="sign-in">        
+        <h2>Sign in</h2>
+        <p>If you want to be a part of the beautiful and unique "KOLORYT" – an original model of the folk songs and choreography, please <a href="form.html">fill the FORM</a></p>
+        
+    </section>
+    <footer>
+        <p align="right">Copyright by KOLORYT
+        <br>Contact address
+        <a href="mailto:info@koloryt.org.ua">info@koloryt.org.ua</a>
+        </p>
+    </footer>
 </body>
 </html>
-
