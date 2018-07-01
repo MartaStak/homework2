@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +8,35 @@
     <title>Form</title>
 </head>
 <body>
-    <h1>Form</h1>
-    
+    <h1>Application Form</h1>
     <form method="POST" action="https://formspree.io/martast75@gmail.com">
+        <fieldset>
+            <legend>Name:</legend>
+                <label for="first-name" style="margin-right: 95px">First Name:</label>
+                <label for="last-name">Last Name:</label> 
+                <br>
+                <input type="text" name="first-name"
+                 id="first-name" placeholder="First Name" required> 
+                <input type="text" name="last-name"
+                 id="last-name" placeholder="Last Name" required> 
+        </fieldset>
         <label for="first-name" margin-right=20px>First Name:</label>
         <label for="last-name">Last Name:</label> 
+        <hr>
         <br>
-        <input type="text" name="first-name"
-         id="first-name" placeholder="First Name" required> 
-        <input type="text" name="last-name"
-         id="last-name" placeholder="Last Name" required> 
         <br>
+        <fieldset>
+            <legend>Age:</legend>
+            <ul>
+                <li style="list-style-type:none"><label for="less-than-15"><input id="less-than-15" type="radio" name="less than 15" checked>Less than 15</label></li>
+                <li style="list-style-type:none"><label for="16-20"><input id="16-20" type="radio" name="16-20">16-20</label></li>
+                <li style="list-style-type:none"><label for="21-25"><input id="21-25" type="radio" name="21-25">21-25</label></li>
+                <li style="list-style-type:none"><label for="26-30"><input id="26-30" type="radio" name="26-30">26-30</label></li>
+                <li style="list-style-type:none"><label for="31-35"><input id="31-35" type="radio" name="31-35">31-35</label></li>
+                <li style="list-style-type:none"><label for="36-40"><input id="36-40" type="radio" name="36-40">36-40</label></li>
+                <li style="list-style-type:none"><label for="more-than-41"><input id="more-than-41" type="radio" name="more than 41">More than 41</label></li>
+            </ul>
+        </fieldset>
         <br>
         <fieldset>
             <legend>Age:</legend>
@@ -29,25 +48,46 @@
             <label for="36-40"><input id="36-40" type="radio" name="36-40"36-40</label>
             <label for="more-than-41"><input id="more-than-41" type="radio" name="more than 41">More than 41</label>
        </fieldset>
+        <hr>
         <br>
+        <fieldset>
+            <legend>Gender:</legend>
+            <ul>
+                <li style="list-style-type:none"><label for="male"><input id="male" type="checkbox" name="male" checked>Male</label></li>
+                <li style="list-style-type:none"><label for="female"><input id="female" type="checkbox" name="female">Female</label></li>
+                <li style="list-style-type:none"><label for="other"><input id="other" type="checkbox" name="other">Other</label></li>
+            </ul>
+        </fieldset>
         <br>
         <label>City:
             <input type="text" name="city"
              placeholder="City" required> 
         </label>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>City:</legend>
+            <label for="city">
+                <input type="text" name="city"
+                 placeholder="City" required> 
+            </label>
+        </fieldset>
         <br>
         <br>
-        <label>Email:
-            <input type="email" name="user-email"
-             placeholder="Email" required> 
-        </label>
-        <br>
-        <br>
-        <label>Password:
-            <input type="password" name="password" placeholder="********"
-              required pattern=".{8,}"
-              title="Minimum 8 symbols">
-        </label>
+        <fieldset>
+            <legend>Sign in:</legend>
+            <label>Email:
+                <input type="email" name="user-email"
+                 placeholder="Email" required> 
+            </label>
+            <br>
+            <br>
+            <label>Password:
+                <input type="password" name="password" placeholder="********"
+                  required pattern=".{8,}"
+                  title="Minimum 8 symbols">
+            </label>
+        </fieldset>
         <br>
         <br>
         <input type="submit" value="SEND"><input type="reset">
@@ -56,3 +96,4 @@
     
 </body>
 </html>
+
