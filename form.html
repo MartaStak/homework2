@@ -10,7 +10,7 @@
     <h1>Form</h1>
     
     <form method="POST" action="https://formspree.io/martast75@gmail.com">
-        <label for="first-name">First Name:</label>
+        <label for="first-name" margin-right=20px>First Name:</label>
         <label for="last-name">Last Name:</label> 
         <br>
         <input type="text" name="first-name"
@@ -19,14 +19,20 @@
          id="last-name" placeholder="Last Name" required> 
         <br>
         <br>
-        <label>Age:
-            <input type="age" name="age"
-             placeholder="Age" required> 
-        </label>
+        <fieldset>
+            <legend>Age:</legend>
+            <label for="less-than-15"><input id="less-than-15" type="radio" name="less than 15">Less than 15</label>
+            <label for="16-20"><input id="16-20" type="radio" name="16-20"16-20</label>
+            <label for="21-25"><input id="21-25" type="radio" name="21-25"21-25</label>
+            <label for="26-30"><input id="26-30" type="radio" name="26-30"26-30</label>
+            <label for="31-35"><input id="31-35" type="radio" name="31-35"31-35</label>
+            <label for="36-40"><input id="36-40" type="radio" name="36-40"36-40</label>
+            <label for="more-than-41"><input id="more-than-41" type="radio" name="more than 41">More than 41</label>
+       </fieldset>
         <br>
         <br>
         <label>City:
-            <input type="city" name="city"
+            <input type="text" name="city"
              placeholder="City" required> 
         </label>
         <br>
